@@ -1,0 +1,41 @@
+<header>
+    <nav class="navbar navbar-dark bg-primary">
+        <a href="" class="navbar-brand">EJS</a>
+    </nav>
+
+
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/about">Sobre</a>
+        </li>
+      </ul>
+
+
+
+    <p>Página: <%= typeof pagina != 'undefined' ? pagina: 'Home' %></p>
+</header>
+
+<style>
+    .navbar{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .navbar-brand{
+        margin-left: 50%;
+    }
+    p{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
+<nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+</nav>

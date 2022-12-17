@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head'); %> 
+    <%- include('../partials/header'); %> 
+<body>
+    <header>
+         <div class="cabecalho">
+            <h1>Minha primeira aplicação com Express! </h1>
+          </div>
+    </header>
+         <main>
+            <div class="conteudo">
+                <ul>
+                    <% qualitys.forEach(function(quality){ %>
+                     <li>
+                        <strong> <%= quality.title %> </strong><%= quality.message %>
+                     </li>
+                     <% }) %>
+                </ul>
+            </div>
+            <div class="subtitle">
+                <p> <%- subtitle %></p>
+            </div>
+        </main>
+      <%= include('../partials/footer') %>)
+    </body>
+</html>
